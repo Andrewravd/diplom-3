@@ -12,6 +12,7 @@ import static com.codeborne.selenide.WebDriverRunner.url;
 
 
 public class Steps {
+
     @Step("Ввод данных пользователя при регистрации")
     public void register(User user, SelenideElement name, SelenideElement email,
                          SelenideElement password) {
@@ -60,7 +61,4 @@ public class Steps {
         element.shouldBe(enabled, Duration.ofSeconds(10));
         element.click();
 
-
-
-    }
 }

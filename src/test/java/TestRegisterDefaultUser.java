@@ -35,4 +35,5 @@ public class TestRegisterDefaultUser {
         steps.clickOnElement(registrationPage.getButtonConfirm());
         steps.checkUrl(Urls.LOGIN_URL);
     }
+
 }
