@@ -41,15 +41,14 @@ public class TestSignInWithButtonLogin {
         steps.clickOnElement(mainPage.getButtonLogin());
         steps.checkUrl(Urls.LOGIN_URL);
         steps.clickOnElement(loginPage.getLinkRegister());
-        steps.isElementDisplayed(registrationPage.getButtonConfirm());
         steps.register(user, registrationPage.getName(),
                 registrationPage.getEmail(), registrationPage.getPassword());
         steps.clickOnElement(registrationPage.getButtonConfirm());
-        steps.isElementDisplayed(loginPage.getButtonSignIn());
         steps.checkUrl(Urls.LOGIN_URL);
         steps.login(user, loginPage.getEmail(), loginPage.getPassword(), loginPage.getButtonSignIn());
         steps.clickOnElement(loginPage.getButtonSignIn());
-        steps.isElementDisplayed(mainPage.getButtonMakeOrder());
         steps.checkUrl(Urls.MAIN_PAGE_URL);
+        steps.clickOnElement(mainPage.getaAccount());
+        steps.checkUrl(Urls.PROFILE_URL);
     }
 }

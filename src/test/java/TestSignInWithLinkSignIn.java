@@ -45,15 +45,15 @@ public class TestSignInWithLinkSignIn {
         steps.register(user, registrationPage.getName(),
                 registrationPage.getEmail(), registrationPage.getPassword());
         steps.clickOnElement(registrationPage.getButtonConfirm());
-        steps.isElementDisplayed(loginPage.getButtonSignIn());
         steps.checkUrl(Urls.LOGIN_URL);
         open(Urls.FORGOT_PASSWORD_URL);
+        steps.checkUrl(Urls.FORGOT_PASSWORD_URL);
         steps.clickOnElement(forgotPasswordPage.getLinkSignIn());
-        steps.isElementDisplayed(loginPage.getButtonSignIn());
         steps.login(user, loginPage.getEmail(), loginPage.getPassword(), loginPage.getButtonSignIn());
         steps.clickOnElement(loginPage.getButtonSignIn());
-        steps.isElementDisplayed(mainPage.getButtonMakeOrder());
         steps.checkUrl(Urls.MAIN_PAGE_URL);
+        steps.clickOnElement(mainPage.getaAccount());
+        steps.checkUrl(Urls.PROFILE_URL);
 
     }
 

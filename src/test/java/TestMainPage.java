@@ -7,6 +7,7 @@ import pages.MainPage;
 
 import static com.codeborne.selenide.Selenide.open;
 
+
 public class TestMainPage {
     private Steps steps;
 
@@ -28,10 +29,10 @@ public class TestMainPage {
     @Description("Переход по разделам <Соусы,Начинки, Бургеры> на главной странице")
     public void checkTabs() {
         steps.clickOnElement(mainPage.getDivSauces());
-        steps.isElementDisplayed(mainPage.getHeaderSauces());
+        Steps.isElementDisplayed(mainPage.getHeaderSauces());
         steps.clickOnElement(mainPage.getDivFiling());
-        steps.isElementDisplayed(mainPage.getHeaderFiling());
+        Steps.isElementDisplayed(mainPage.getHeaderFiling());
         steps.clickOnElement(mainPage.getDivBuns());
-        steps.isElementDisplayed(mainPage.getHeaderBuns());
+        Steps.isElementDisplayed(mainPage.getHeaderBuns());
     }
 }
