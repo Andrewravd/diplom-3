@@ -3,7 +3,6 @@ import io.qameta.allure.Description;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import pages.RegistrationPage;
 
 import static com.codeborne.selenide.Selenide.open;
 

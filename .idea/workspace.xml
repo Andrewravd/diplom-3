@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc6da0ae-3051-47f9-922b-23a925edf772" name="Changes" comment="Написал ui тесты" />
+    <list default="true" id="fc6da0ae-3051-47f9-922b-23a925edf772" name="Changes" comment="Написал ui тесты">
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ForgotPasswordPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ForgotPasswordPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/PersonalAccountPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/RegistrationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestPersonalAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestPersonalAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestRegisterDefaultUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRegisterDefaultUser.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

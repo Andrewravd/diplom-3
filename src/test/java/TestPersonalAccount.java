@@ -6,7 +6,6 @@ import org.junit.Test;
 import pages.LoginPage;
 import pages.MainPage;
 import pages.PersonalAccountPage;
-import pages.RegistrationPage;
 
 import static com.codeborne.selenide.Selenide.open;
 
