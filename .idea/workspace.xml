@@ -4,14 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc6da0ae-3051-47f9-922b-23a925edf772" name="Changes" comment="Написал ui тесты">
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestMainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestMainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestPersonalAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestPersonalAccount.java" afterDir="false" />
-    </list>
+    <list default="true" id="fc6da0ae-3051-47f9-922b-23a925edf772" name="Changes" comment="добавил тесты" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -30,6 +34,11 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean test" />
+    </option>
   </component>
   <component name="TaskManager">
     <task id="LOCAL-00001" summary="Написал ui тесты">
@@ -60,7 +69,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676159514389</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="добавил тесты">
+      <created>1676161078350</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676161078350</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -93,6 +109,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Написал ui тесты" />
-    <option name="LAST_COMMIT_MESSAGE" value="Написал ui тесты" />
+    <MESSAGE value="добавил тесты" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавил тесты" />
   </component>
 </project>
