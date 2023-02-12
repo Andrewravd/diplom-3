@@ -167,6 +167,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Написал ui тесты" />
-    <option name="LAST_COMMIT_MESSAGE" value="Написал ui тесты" />
+    <MESSAGE value="добавил тесты" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавил тесты" />
   </component>
 </project>
