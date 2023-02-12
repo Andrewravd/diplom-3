@@ -6,10 +6,23 @@ import org.junit.Test;
 import pages.LoginPage;
 import pages.MainPage;
 import pages.PersonalAccountPage;
+import pages.RegistrationPage;
 
 import static com.codeborne.selenide.Selenide.open;
 
+
 public class TestPersonalAccount {
+    private User user;
+
+    private Steps steps;
+
+    private RegistrationPage registrationPage;
+
+    private MainPage mainPage;
+
+    private LoginPage loginPage;
+
+    private PersonalAccountPage personalAccountPage;
 
     @Before
     public void setUp() {
@@ -88,5 +101,4 @@ public class TestPersonalAccount {
         steps.clickOnElement(personalAccountPage.getButtonExit());
         steps.checkUrl(Urls.LOGIN_URL);
     }
-
 }

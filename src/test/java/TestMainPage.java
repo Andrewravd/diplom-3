@@ -35,5 +35,4 @@ public class TestMainPage {
         steps.clickOnElement(mainPage.getDivBuns());
         Steps.isElementDisplayed(mainPage.getHeaderBuns());
     }
-
 }

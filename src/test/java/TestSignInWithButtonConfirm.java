@@ -1,7 +1,39 @@
+import com.codeborne.selenide.Selenide;
+import io.qameta.allure.Description;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import pages.LoginPage;
+import pages.MainPage;
+import pages.RegistrationPage;
+
 import static com.codeborne.selenide.Selenide.open;
 
 public class TestSignInWithButtonConfirm {
+    private User user;
 
+    private Steps steps;
+
+    private RegistrationPage registrationPage;
+
+    private MainPage mainPage;
+
+    private LoginPage loginPage;
+
+    @Before
+    public void setUp() {
+        user = UserGenerator.getDefaultUser();
+        steps = new Steps();
+        mainPage = new MainPage();
+        registrationPage = new RegistrationPage();
+        loginPage = new LoginPage();
+        open(Urls.REGISTRATION_URL);
+    }
+
+    @After
+    public void closeWebDriver() {
+        Selenide.closeWebDriver();
+    }
 
     @Test
     @Description("Авторизация через кнопку <Войти> в форме регистрации")
@@ -19,5 +51,4 @@ public class TestSignInWithButtonConfirm {
         steps.clickOnElement(mainPage.getaAccount());
         steps.checkUrl(Urls.PROFILE_URL);
     }
-
 }

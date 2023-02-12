@@ -1,5 +1,16 @@
-public class TestSignInWithLinkSignIn {
+import com.codeborne.selenide.Selenide;
+import io.qameta.allure.Description;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import pages.ForgotPasswordPage;
+import pages.LoginPage;
+import pages.MainPage;
+import pages.RegistrationPage;
 
+import static com.codeborne.selenide.Selenide.open;
+
+public class TestSignInWithLinkSignIn {
     private User user;
 
     private Steps steps;
@@ -45,5 +56,6 @@ public class TestSignInWithLinkSignIn {
         steps.checkUrl(Urls.PROFILE_URL);
 
     }
+
 
 }
