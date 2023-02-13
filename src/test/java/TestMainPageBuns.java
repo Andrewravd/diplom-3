@@ -8,7 +8,7 @@ import pages.MainPage;
 import static com.codeborne.selenide.Selenide.open;
 
 
-public class TestMainPage {
+public class TestMainPageBuns {
     private Steps steps;
 
     MainPage mainPage;
@@ -26,13 +26,11 @@ public class TestMainPage {
     }
 
     @Test
-    @Description("Переход по разделам <Соусы,Начинки, Бургеры> на главной странице")
+    @Description("Проверка раздела <Булки> на главной странице")
     public void checkTabs() {
-        steps.clickOnElement(mainPage.getDivSauces());
-        Steps.isElementDisplayed(mainPage.getHeaderSauces());
-        steps.clickOnElement(mainPage.getDivFiling());
-        Steps.isElementDisplayed(mainPage.getHeaderFiling());
-        steps.clickOnElement(mainPage.getDivBuns());
-        Steps.isElementDisplayed(mainPage.getHeaderBuns());
+        steps.checkCurrentTab(mainPage.getDivBuns());
+        steps.isElementDisplayed(mainPage.getHeaderBuns());
+
+
     }
 }

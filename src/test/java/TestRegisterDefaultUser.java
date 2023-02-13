@@ -3,6 +3,7 @@ import io.qameta.allure.Description;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import pages.LoginPage;
 import pages.RegistrationPage;
 
 import static com.codeborne.selenide.Selenide.open;
@@ -14,11 +15,14 @@ public class TestRegisterDefaultUser {
 
     private RegistrationPage registrationPage;
 
+    private LoginPage loginPage;
+
     @Before
     public void setUp() {
         user = UserGenerator.getDefaultUser();
         steps = new Steps();
         registrationPage = new RegistrationPage();
+        loginPage = new LoginPage();
         open(Urls.REGISTRATION_URL);
     }
 
@@ -33,6 +37,7 @@ public class TestRegisterDefaultUser {
         steps.register(user, registrationPage.getName(),
                 registrationPage.getEmail(), registrationPage.getPassword());
         steps.clickOnElement(registrationPage.getButtonConfirm());
+        steps.isElementDisplayed(loginPage.getButtonSignIn());
         steps.checkUrl(Urls.LOGIN_URL);
     }
 }

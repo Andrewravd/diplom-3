@@ -46,11 +46,14 @@ public class TestPersonalAccount {
         steps.register(user, registrationPage.getName(),
                 registrationPage.getEmail(), registrationPage.getPassword());
         steps.clickOnElement(registrationPage.getButtonConfirm());
+        steps.isElementDisplayed(loginPage.getButtonSignIn());
         steps.checkUrl(Urls.LOGIN_URL);
         steps.login(user, loginPage.getEmail(), loginPage.getPassword(), loginPage.getButtonSignIn());
         steps.clickOnElement(loginPage.getButtonSignIn());
+        steps.isElementDisplayed(mainPage.getButtonMakeOrder());
         steps.checkUrl(Urls.MAIN_PAGE_URL);
         steps.clickOnElement(mainPage.getaAccount());
+        steps.isElementDisplayed(personalAccountPage.getButtonExit());
         steps.checkUrl(Urls.PROFILE_URL);
     }
 
@@ -60,13 +63,17 @@ public class TestPersonalAccount {
         steps.register(user, registrationPage.getName(),
                 registrationPage.getEmail(), registrationPage.getPassword());
         steps.clickOnElement(registrationPage.getButtonConfirm());
+        steps.isElementDisplayed(loginPage.getButtonSignIn());
         steps.checkUrl(Urls.LOGIN_URL);
         steps.login(user, loginPage.getEmail(), loginPage.getPassword(), loginPage.getButtonSignIn());
         steps.clickOnElement(loginPage.getButtonSignIn());
+        steps.isElementDisplayed(mainPage.getButtonMakeOrder());
         steps.checkUrl(Urls.MAIN_PAGE_URL);
         steps.clickOnElement(mainPage.getaAccount());
+        steps.isElementDisplayed(personalAccountPage.getButtonExit());
         steps.checkUrl(Urls.PROFILE_URL);
         steps.clickOnElement(personalAccountPage.getDivConstructor());
+        steps.isElementDisplayed(mainPage.getButtonMakeOrder());
         steps.checkUrl(Urls.MAIN_PAGE_URL);
     }
 
@@ -76,13 +83,17 @@ public class TestPersonalAccount {
         steps.register(user, registrationPage.getName(),
                 registrationPage.getEmail(), registrationPage.getPassword());
         steps.clickOnElement(registrationPage.getButtonConfirm());
+        steps.isElementDisplayed(loginPage.getButtonSignIn());
         steps.checkUrl(Urls.LOGIN_URL);
         steps.login(user, loginPage.getEmail(), loginPage.getPassword(), loginPage.getButtonSignIn());
         steps.clickOnElement(loginPage.getButtonSignIn());
+        steps.isElementDisplayed(mainPage.getButtonMakeOrder());
         steps.checkUrl(Urls.MAIN_PAGE_URL);
         steps.clickOnElement(mainPage.getaAccount());
+        steps.isElementDisplayed(personalAccountPage.getButtonExit());
         steps.checkUrl(Urls.PROFILE_URL);
         steps.clickOnElement(personalAccountPage.getDivLogo());
+        steps.isElementDisplayed(mainPage.getButtonMakeOrder());
         steps.checkUrl(Urls.MAIN_PAGE_URL);
     }
 
@@ -92,13 +103,17 @@ public class TestPersonalAccount {
         steps.register(user, registrationPage.getName(),
                 registrationPage.getEmail(), registrationPage.getPassword());
         steps.clickOnElement(registrationPage.getButtonConfirm());
+        steps.isElementDisplayed(loginPage.getButtonSignIn());
         steps.checkUrl(Urls.LOGIN_URL);
         steps.login(user, loginPage.getEmail(), loginPage.getPassword(), loginPage.getButtonSignIn());
         steps.clickOnElement(loginPage.getButtonSignIn());
+        steps.isElementDisplayed(mainPage.getButtonMakeOrder());
         steps.checkUrl(Urls.MAIN_PAGE_URL);
         steps.clickOnElement(mainPage.getaAccount());
+        steps.isElementDisplayed(personalAccountPage.getButtonExit());
         steps.checkUrl(Urls.PROFILE_URL);
         steps.clickOnElement(personalAccountPage.getButtonExit());
+        steps.isElementDisplayed(loginPage.getButtonSignIn());
         steps.checkUrl(Urls.LOGIN_URL);
     }
 }

@@ -1,56 +1,50 @@
-import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import org.junit.Assert;
+import org.openqa.selenium.By;
 
 import java.time.Duration;
 
 import static com.codeborne.selenide.Condition.enabled;
 import static com.codeborne.selenide.Condition.visible;
+import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.WebDriverRunner.url;
+
 
 
 public class Steps {
     @Step("Ввод данных пользователя при регистрации")
     public void register(User user, SelenideElement name, SelenideElement email,
                          SelenideElement password) {
+        name.shouldBe(enabled, Duration.ofSeconds(10));
+        email.shouldBe(enabled, Duration.ofSeconds(10));
+        password.shouldBe(enabled, Duration.ofSeconds(10));
         name.sendKeys(user.getName());
-        Selenide.sleep(500);
         email.sendKeys(user.getEmail());
-        Selenide.sleep(500);
         password.sendKeys(user.getPassword());
-        Selenide.sleep(500);
     }
 
     @Step("Авторизация пользователя")
     public void login(User user, SelenideElement email,
                       SelenideElement password, SelenideElement buttonSignIn) {
-        email.shouldBe(visible, Duration.ofSeconds(10));
-        password.shouldBe(visible, Duration.ofSeconds(10));
-        buttonSignIn.shouldBe(visible, Duration.ofSeconds(10));
+        email.shouldBe(enabled, Duration.ofSeconds(10));
+        password.shouldBe(enabled, Duration.ofSeconds(10));
+        buttonSignIn.shouldBe(enabled, Duration.ofSeconds(10));
         email.sendKeys(user.getEmail());
-        Selenide.sleep(500);
         password.sendKeys(user.getPassword());
 
 
     }
 
     @Step("Проверка отображения элемента")
-    public static boolean isElementDisplayed(SelenideElement element) {
-        Selenide.sleep(700);
-        try {
-            element.shouldBe(Condition.visible);
-            return true;
-        } catch (Exception e) {
-            return false;
-        }
+    public void isElementDisplayed(SelenideElement element) {
+        element.shouldBe(visible, Duration.ofSeconds(10));
+
     }
 
 
     @Step("Открыта страница {url}")
     public void checkUrl(String url) {
-        Selenide.sleep(1000);
         Assert.assertEquals(url, url());
     }
 
@@ -60,5 +54,11 @@ public class Steps {
         element.shouldBe(enabled, Duration.ofSeconds(10));
         element.click();
 
+    }
+
+    @Step("Вкладка выбрана")
+    public void checkCurrentTab(SelenideElement element) {
+        Assert.assertEquals($(By.xpath(".//div[contains(@class,'tab_tab_type_current')]"))
+                , element);
     }
 }
