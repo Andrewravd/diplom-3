@@ -4,11 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc6da0ae-3051-47f9-922b-23a925edf772" name="Changes" comment="Написал ui тесты" />
+    <list default="true" id="fc6da0ae-3051-47f9-922b-23a925edf772" name="Changes" comment="убрал sleep, разделил проверку вкладок, добавил новый метод по проверке вкладки">
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestMainPageBuns.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestMainPageFiling.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestMainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestMainPageSauces.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestPersonalAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestPersonalAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestRegisterDefaultUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRegisterDefaultUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestSignInWithButtonConfirm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestSignInWithButtonConfirm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestSignInWithButtonLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestSignInWithButtonLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestSignInWithLinkAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestSignInWithLinkAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestSignInWithLinkSignIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestSignInWithLinkSignIn.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -18,6 +37,9 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -25,9 +47,87 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProjectId" id="2Lh7V7yLe9KK54hQ7XzfsRk4Iux" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean test" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.TestSignInWithButtonLogin.signInWithButtonLogin">
+    <configuration name="TestMainPageBuns.checkTabs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="diplom-3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestMainPageBuns" />
+      <option name="METHOD_NAME" value="checkTabs" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestMainPageFiling.checkTabs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="diplom-3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestMainPageFiling" />
+      <option name="METHOD_NAME" value="checkTabs" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestPersonalAccount.clickOnLinkPersonalAccount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="diplom-3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestPersonalAccount" />
+      <option name="METHOD_NAME" value="clickOnLinkPersonalAccount" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRegisterWithIncorrectPassword.makeUserWithIncorrectPassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="diplom-3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestRegisterWithIncorrectPassword" />
+      <option name="METHOD_NAME" value="makeUserWithIncorrectPassword" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSignInWithButtonLogin.signInWithButtonLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="diplom-3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestSignInWithButtonLogin" />
+      <option name="METHOD_NAME" value="signInWithButtonLogin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestSignInWithButtonLogin.signInWithButtonLogin" />
+        <item itemvalue="JUnit.TestMainPageFiling.checkTabs" />
+        <item itemvalue="JUnit.TestMainPageBuns.checkTabs" />
+        <item itemvalue="JUnit.TestRegisterWithIncorrectPassword.makeUserWithIncorrectPassword" />
+        <item itemvalue="JUnit.TestPersonalAccount.clickOnLinkPersonalAccount" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task id="LOCAL-00001" summary="Написал ui тесты">
       <created>1676158520745</created>
@@ -57,12 +157,38 @@
       <option name="project" value="LOCAL" />
       <updated>1676159514389</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="добавил тесты">
+      <created>1676161078350</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676161078350</updated>
+    </task>
+    <task id="LOCAL-00006" summary="добавил тесты">
+      <created>1676161440864</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676161440864</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fc6da0ae-3051-47f9-922b-23a925edf772" name="Changes" comment="добавил тесты" />
+      <created>1676311481592</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1676311481592</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="4d3030bd-91ab-49ec-b557-f71b9b5cc06c">
+          <value>
+            <State />
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State>
@@ -87,9 +213,16 @@
         </entry>
       </map>
     </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="4d3030bd-91ab-49ec-b557-f71b9b5cc06c" value="TOOL_WINDOW" />
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Написал ui тесты" />
-    <option name="LAST_COMMIT_MESSAGE" value="Написал ui тесты" />
+    <MESSAGE value="добавил тесты" />
+    <MESSAGE value="убрал sleep, разделил проверку вкладок, добавил новый метод по проверке вкладки" />
+    <option name="LAST_COMMIT_MESSAGE" value="убрал sleep, разделил проверку вкладок, добавил новый метод по проверке вкладки" />
   </component>
 </project>
